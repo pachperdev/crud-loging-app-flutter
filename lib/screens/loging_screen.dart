@@ -1,3 +1,4 @@
+import 'package:crud_loging_app_flutter/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 
 class LogingScreen extends StatelessWidget {
@@ -5,13 +6,8 @@ class LogingScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('LogingScreen'),
-      ),
-      body: const Center(
-        child: Text('LogingScreen'),
-      ),
+    return const Scaffold(
+      body: AutBackground(),
     );
   }
 }

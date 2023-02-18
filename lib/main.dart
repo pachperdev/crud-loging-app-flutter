@@ -9,12 +9,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'crud & loging',
-      initialRoute: 'home',
+      initialRoute: 'loging',
       routes: {
         'home': (context) => const HomeScreen(),
         'loging': (context) => const LogingScreen(),
       },
+      theme: ThemeData.light().copyWith(
+        scaffoldBackgroundColor: Colors.grey[300],
+      ),
     );
   }
 }
