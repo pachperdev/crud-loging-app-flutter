@@ -6,8 +6,14 @@ class LogingScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: AutBackground(),
+    return Scaffold(
+      body: AutBackground(
+        child: Container(
+          width: double.infinity,
+          height: 200,
+          color: Colors.red,
+        ),
+      ),
     );
   }
 }
